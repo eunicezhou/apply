@@ -1,0 +1,100 @@
+body{
+    background-color:#003060 ;
+    font-family: "Calibri","新細明體";
+    color:#fff;
+    overflow:hidden;
+}
+.header{
+    background-color: #D2E9FF;
+    filter:opacity(90%);
+    margin:10px 0 10px;
+    z-index:10;
+    padding:5px 0 5px;
+    position: fixed;
+    left:0;
+    width:100%;
+}
+.header>div{
+    font-size: 36px;
+    text-align: center;
+    font-family:"Calibri","微軟正黑體";
+    font-weight: bold;
+    filter:opacity(100%);
+}
+.content{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.left{
+    grid-row:1/11 ;
+    grid-column: 1/2;
+    overflow:hidden;
+}
+.left img{
+    z-index:5;
+}
+.right{
+    grid-column: 2/4;
+    grid-row:2/6;
+}
+.text{
+    width:70%;
+    padding:0 100px;
+
+}
+#right_title{
+    list-style-image: url(./img/pencil.png);
+    font-size: 24px;
+    font-weight: bold;
+}
+.button{
+    grid-column: 3/4;
+    grid-row:6/7;
+    display:flex;
+    justify-content:center;
+    align-items:start;
+}
+#button{
+    background-color: #C7C7E2;
+    border-width: 1px;
+    width:90px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:10px;
+    box-shadow:1px 1px 1px 2px #A6A6D2;
+}
+#button a{
+    font-weight: bold;
+    font-size: 16px;
+    text-align:center;
+    color:#fff;
+    text-decoration: none;
+    font-family: "微軟正黑體";
+}
+#button:hover{
+    background-color: #7373B9;
+    box-shadow: none;
+}
+#button:active{
+    background-color: #7373B9;
+    box-shadow:-1px -1px 1px 2px 	#5A5AAD;
+}
+table{
+    text-align: center;
+    border-style: double;
+    border-width: 3px;
+    border-color:#fff;
+    border-collapse: collapse;
+}
+th,td{
+    border-width: 1px;
+    border-style:solid;
+}
